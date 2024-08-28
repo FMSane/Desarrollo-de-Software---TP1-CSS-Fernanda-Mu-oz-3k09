@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0rem;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.cabecera{
+    background-color: #444444;
+    margin-bottom: 1.5rem;
+}
+
+.cabecera h1{
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.par_cita h3{
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid #555555;
+}
+
+.par_cita p{
+    font-size: 1rem;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-line: solid;
+    color: #444444;
+}
+
+.par_cita blockquote{
+    font-size: 1rem;
+    text-align: left;
+    text-transform: none;
+    font-style: italic;
+    color: #555555;
+    background-color: #EEEEEE;
+    padding: 0.7rem;
+    border-left: 2px solid #555555;
+}
+
+.cajas{
+    margin-bottom: 30px;
+}
+
+.cajas h3{
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid #555555;
+}
+
+.caja1{
+    padding: 5px;
+    margin: 15px;
+    border: 1px solid #000000;
+    border-radius: 0.7rem;
+    box-shadow: 5px 4px 10px 0px #777777;
+    background-color: #FFFFFF;
+}
+
+.caja2{
+    padding: 5px;
+    margin: 15px;
+    border: 5px solid #000000;
+    border-radius: 0.7rem;
+    box-shadow: 5px 4px 10px 0px #777777;
+    background-color: #eccda1;
+}
+
+.posiciones h3{
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid #555555;
+}
+
+.relativo{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    background-color: #eccda1;
+    padding: 15px;
+    margin-bottom: 70px;
+}
+
+.absoluto{
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    background-color: #be802b;
+    border-radius: 0.7rem;
+}
+
+.grid h3{
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid #555555;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+}
+
+.grid-item{
+    background-color: #eccda1;
+    border-radius: 0.7rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.animacion{
+    width: 100px;
+    height: 100px;
+    background-color: #777777;
+    transition: 0.4s;
+}
+
+.animacion:hover{
+    cursor: pointer;
+    background-color: #A1D0ED;
+}
+
+.mover{
+    width: 100px;
+    height: 100px;
+    background-color: #eccda1;
+    border-radius: 50rem;
+    animation: mover 2s infinite;
+}
+
+@keyframes mover{
+    0%{
+        transform:translateX(0px);
+    }
+    50%{
+        transform:translateX(200px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        margin: 0rem;
+        background-color: #A1D0ED;
+    }
+
+    body section{
+        padding: 10px;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+    }
+
+    .cabecera h1{
+        padding: 2px;
+    }
+
+    .posiciones{
+        padding-bottom: 50px;
+    }
+
+    .absoluto{
+        top: 80px;
+        margin: 0px;
+        left: 40px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    body{
+        margin: 0rem;
+        background-color: #A1D0ED;
+    }
+
+    body section{
+        padding: 10px;
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+    }
+
+    .cabecera h1{
+        padding: 2px;
+    }
+
+    .absoluto{
+        top: 115px;
+        margin: 0px;
+        left: 40px;
+    }
+}
